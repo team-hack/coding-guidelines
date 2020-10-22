@@ -1,6 +1,6 @@
 # Coding Guidelines
 
-Here are some helpful pointers to abide by when coding for Team Hack.
+Here are some helpful pointers to abide by when coding for Team Hack.  If you have any questions, feel free to message us on Discord via channel #teamhack.  Link for invite is: [https://discord.gg/sFHSVR5]
 
 ## Our Code Is Open Source
 
