@@ -58,6 +58,12 @@ Our team will review your pull request.  If everything looks good we'll merge it
 
 If your pull request is merged in you can now delete your feature branch and start a new feature.  This is recommended as each feature branch should be associated to its own scope of work for history review.  
 
+In your terminal or command line, switch branches back to the `main` branch:
+
+```sh
+git checkout main
+```
+
 Create a reference to the upstream branch Team Hack repo in your project by going to terminal and running:
 
 ```sh 
