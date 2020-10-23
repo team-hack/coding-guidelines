@@ -1,3 +1,11 @@
+##Table of Contents
+How to approach this repo.
+1. [Coding Guidelines](#coding-guidelines) (this file)
+2. [Getting Started](gettingstarted.md)
+3. [BLM](blm.md)
+4. [Code Reviews](code-reviews.md)
+5. [Gitflow](gitflow.md)
+
 # Coding Guidelines
 
 Here are some helpful pointers to abide by when coding for Team Hack.  If you have any questions, feel free to message us on Discord via channel #teamhack.  Link for invite is: https://discord.gg/sFHSVR5
