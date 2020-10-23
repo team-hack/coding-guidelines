@@ -1,4 +1,4 @@
-##Table of Contents
+## Table of Contents
 How to approach this repo.
 1. [Coding Guidelines](#coding-guidelines) (this file)
 2. [Getting Started](gettingstarted.md)

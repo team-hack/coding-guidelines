@@ -8,7 +8,7 @@ I want to just make sure everyone is on the same page by just outlining what to 
 - Once logged in, make sure you look for the channel #teamhack on the left hand side of the channels area (the main area is where people chat).
 - Click on `#teamhack` to get to the Team Hack channel and then say hello, to let us know you're in! Mission 1 complete!
 
-## Book Mark Github
+## Bookmark Github
 
 Next, after you're on Discord, be sure to also have the Github community saved (bookmarked) in your browser.
 
@@ -90,6 +90,10 @@ Push everything so your own repo on Github is also in sync
 ```sh
 git push
 ```
+
+## Next Steps - Clone The Storybook Repo
+
+Go back our [Team Hack main page](https://github.com/team-hack) and look for the repo `react-components`.  Go ahead and clone that down, and then start to look around the code locally on your own machine.  Be sure to create a new feature branch before doing any work.  Then see if you can edit some of the components already there or add a new component to the work if you feel confident.  We will be working to create our own component library so it's a good idea to read ahead and try to understand things before our next call.  Any questions, again ask on [Discord](https://discord.gg/sFHSVR5)!
 
 **Any questions, please ask on Discord!!**
 
