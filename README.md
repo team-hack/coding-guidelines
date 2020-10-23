@@ -4,7 +4,7 @@ Here are some helpful pointers to abide by when coding for Team Hack.
 
 ## Our Code Is Open Source
 
-Whatever we code is for the benefit of the open source community.  We generally follow the GNU LICENSE v3 Standard, so please be sure to familiarize yourself with it first and foremost.  You may use the code for your own projects, however you may not redistribute, plagiarize our projects as your own commercial projects for sale (in basic terms -- again read the full LICENSE for each project).
+Whatever we code is for the benefit of the open source community.  We generally follow the [GNU LICENSE v3 Standard](https://www.gnu.org/licenses/gpl-3.0.en.html), so please be sure to familiarize yourself with it first and foremost.  You may use the code for your own projects, however you may not redistribute, plagiarize our projects as your own commercial projects for sale (in basic terms -- again read the full LICENSE for each project).
 
 ## Be Ethical.  Do Not Do Harm To Others.
 
