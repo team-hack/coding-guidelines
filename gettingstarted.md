@@ -98,4 +98,4 @@ We wanted to use the JIRA boards for doing the projects, but this becomes expens
 
 Our first big project will be the components library that Ben talked about at our meeting.  We will have another meeting to talk about that in more detail, but in the mean time feel free to use Discord as a place to ask questions and suggest more project ideas (especially if you want to do backend or ML or anything else).
 
-Thanks for your support and see you at the next meetup!
+Thanks for your support, stay safe, and see you at the next meetup!
