@@ -31,3 +31,5 @@ Here are also some [social rules](https://www.recurse.com/social-rules) we shoul
 Do not insult, put down or otherwise demoralize others for code quality.  Help them instead to become a better coder.  No matter how great you are at coding now, someone else taught you as a beginner.  If you feel like someone else's code is not that great, help them so they can write better.
 
 That said, you do not have to be someone's personal teacher. We are not here to help people learn how to code; that is the responsibility of the individual member.  But we can mentor, so if you are able to share a resource or learning aid, or even spare a few minutes of your time to go over how to do something a bit better -- that would be greatly appreciated.
+
+shan was here
