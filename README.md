@@ -10,7 +10,7 @@ How to approach this repo.
 
 # Coding Guidelines
 
-Visit [Getting Started](/coding-guidelines/gettingstarted.md) to get started with our community.
+Visit [Getting Started](gettingstarted.md) to get started with our community.
 
 Be sure to also check out the below, as it's important that you understand the following about our group culture before you join us.
 
