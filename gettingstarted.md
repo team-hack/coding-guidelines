@@ -95,7 +95,7 @@ Create a feature branch using the commands you read above with the following bra
 git checkout -b feature/update-readme/<my-update-summary>
 ```
 
-Make any changes you see fit, and then push back up and submit a pull request. Then let us know on Discord and get someone to give you an approval.
+Make any changes you see fit, and then push back up and submit a pull request. Then let us know on Discord and get someone to give you an approval. You won't need to worry about linting / tests with this repo, but when you work on the next project -- that's when you'll need to also make sure your build passes.
 
 Here's the link to [Discord](https://discord.gg/sFHSVR5) again.
 
