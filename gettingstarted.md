@@ -31,10 +31,10 @@ For convenience, you may want to set up a public key for yourself so you can pus
 After cloning the repo, go to your command line, then create a new feature branch, using the following syntax:
 
 ```sh
-git checkout -b feature/<issue-number>/<issue-name>
+git checkout -b feature/<issue>/<issue-name>
 ```
 
-An example could be: `git checkout -b feature/issue-6/typescript-support`.
+An example could be: `git checkout -b feature/issue-<number>/typescript-support`. (If a number is relevant, please add it to the issue).
 
 > Keep your branch names short and concise please.
 
