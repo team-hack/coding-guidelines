@@ -14,93 +14,89 @@ Next, after you're on Discord, be sure to also have the Github community saved (
 
 Here's the link: https://github.com/team-hack.
 
-## Fork A Repo, Create A Feature & Submit a Pull Request
+## Create A Feature & Do Work, And Keep Up To Date With Origin
 
-From Github, go to the repo for **coding-guidelines**. Fork this repo to your own Github by clicking the Fork button at the top right hand corner of the page.
-
-You should see a cool animation showing the coding guidelines repo being copied to your own Github.
-
-Now clone this repo to your local computer by selecting the **green Code button** towards middle of page and using the command:
+Clone a repo to your local computer by selecting the **green Code button** towards middle of page and using the command:
 
 ```sh
 git clone <repo url>
 ```
 
+> Anything in angular brackets `<>` syntax means placeholder and you should write your own appropriate text, e.g. here get the real repo url and plug it in the place of the `<repo url>`.
+
 Do this inside your command line tool of choice (e.g. Terminal for Mac/Linux, Command Prompt or Powershell for Windows).
 
-For convenience, you may want to set up a public key for yourself so you can push and pull commits without having to type in a password. It's also more secure!
+For convenience, you may want to set up a public key for yourself so you can push and pull commits without having to type in a password. It's also more secure! Some good documentation on [setting up Git and SSH can be found via this link](https://gorails.com/setup/osx/11.0-big-sur).
 
-After cloning the repo, go to your command line, then create a new feature branch, e.g. type:
+After cloning the repo, go to your command line, then create a new feature branch, using the following syntax:
 
 ```sh
-git checkout -b "<featurebranchname>"
+git checkout -b feature/<issue-number>/<issue-name>
 ```
 
-You can now open up the folder in your favorite editor, e.g. VScode or Atom, and then make some changes. We recommend making changes to the **README.md** file as it's just text (not code) so should be easy to add or change a few sentences.
+An example could be: `git checkout -b feature/issue-6/typescript-support`.
 
-When you are done, go back to your command line, then be sure to add your changes, stage and commit. Finally, push your work back to your own Github. Here are the commands you'll need:
+> Keep your branch names short and concise please.
+
+You can now open up the folder in your favorite editor, e.g. VScode or Atom, and then make some changes. Feel free to look through git history as well to get a sense of what's been in development, and ask questions about anything you don't understand via Discord or issues. Make changes as you see fit to fix the issue, and then push up.
+
+To push up, go back to your command line, add your changes to stage, then commit. Be sure to first pull down from the project main branch (usually `main` or `develop` -- check the project) and work on any merge conflicts before pushing your work. Typically, if I haven't made any local commits yet, I'll just stash my work and then apply my changes after pulling from the project main branch.
+
+```sh
+git stash
+git fetch origin <project main branch name>
+git merge <project main branch name>
+git stash apply
+```
+
+> If there were changes to the feature branch as well, you'll want to fetch and merge those changes as well -- e.g. if you are working with another programmer on the same feature.
+
+> You can use `git pull` as a shortcut to `git fetch` and `git merge`, but be sure to set up your tracking if you want this convenience.
+
+If you do make commits locally, and then pull from the origin -- you might get **merge conflicts**. That's okay, just go through each file with a mergetool (I like VSCode) and update the code appropriately before making a new commit to push up. You may also have no merge conflicts and just be asked to make a new commit automatically.
+
+Finally, push your work. Here are the commands you'll need:
 
 ```sh
 git add --all
 git commit -m "My first commit"
-git push origin <featurebranchname>
+git push origin feature/<issue-number>/<issue-name>
 ```
 
-If successful, your code should get pushed back up to your Github repo.
+If successful, your code should get pushed back the Github repo you've cloned from.
 
-At the top of your own Github repo, select your feature branch from the dropdown, then you should see a new Green button in a yellow alert banner that says **Compare & pull request**. Click that button (or click Pull Request).
+## Make a Pull Request
 
-Next, under "Open a pull request", make sure that everything looks correct -- basically your repo should request to merge with the team-hack/coding-guidelines repo.
+At the top of the Github repo, you should see a new Green button in a yellow alert banner that says **Compare & pull request**. Click that button (or click Pull Request).
 
-Under your commit message, you can write a description to further talk about what you are trying to submit. Click the **green "Create pull request"** when you are done.
+Next, under "Open a pull request", make sure that everything looks correct -- basically your repo should request to merge with active Team Hack branch.
 
-Our team will review your pull request. If everything looks good we'll merge it with the "main" branch. If not, we will leave it open with comments for you to fix.
+Under your commit message, you can write a description to further talk about what you are trying to submit. Github supports screenshots as well if you need to show pictures.
 
-If your pull request is merged in you can now delete your feature branch and start a new feature. This is recommended as each feature branch should be associated to its own scope of work for history review.
+The next step is for your code to build, since we support a CI/CD workflow -- aka Continous Integration and Continuous Development. We'll either have Travis or Github Actions installed for the project, which will build your code and check the following:
 
-In your terminal or command line, switch branches back to the `main` branch:
+1. Your code is linted
+2. You've written tests and they pass
+3. Additional rules as necessary for project
+
+If your code fails, you'll need to fix these errors locally before submitting another PR (pull request). If you need help, ask for help on our Discord channel and get a pair partner to help you figure out what's going on.
+
+You can and should request code reviews too -- since you'll need at least one other person (besides yourself) to review and approve the code. Once code builds and is approved, you can merge it to our active branch.
+
+If your pull request is merged in you can now delete your feature branch and start working on another feature / issue. This is recommended as each feature branch should be associated to its own scope of work for history review.
+
+## Next Steps - Show Us You Understand
+
+Clone this repo, and your **first issue will be to help make sure this document is up to date.**
+
+Create a feature branch using the commands you read above with the following branch syntax:
 
 ```sh
-git checkout main
+git checkout -b feature/update-readme/<my-update-summary>
 ```
 
-Create a reference to the upstream branch Team Hack repo in your project by going to terminal and running:
+Make any changes you see fit, and then push back up and submit a pull request. Then let us know on Discord and get someone to give you an approval.
 
-```sh
-git remote add upstream https://github.com/team-hack/coding-guidelines.git
-```
+Here's the link to [Discord](https://discord.gg/sFHSVR5) again.
 
-Pull in changes from upstream with:
-
-```sh
-git fetch upstream
-git merge upstream/main
-```
-
-Your main branch should now be in sync with Team Hack's repo locally.
-
-You can now delete your feature branch with:
-
-```sh
-git branch -d <featurebranchname>
-```
-
-Push everything so your own repo on Github is also in sync
-
-```sh
-git push
-```
-
-## Next Steps - Clone The Storybook Repo
-
-Go back our [Team Hack main page](https://github.com/team-hack) and look for the repo `react-components`. Go ahead and clone that down, and then start to look around the code locally on your own machine. Be sure to create a new feature branch before doing any work. Then see if you can edit some of the components already there or add a new component to the work if you feel confident. We will be working to create our own component library so it's a good idea to read ahead and try to understand things before our next call. Any questions, again ask on [Discord](https://discord.gg/sFHSVR5)!
-
-**Any questions, please ask on Discord!!**
-
-## Notes:
-
-We wanted to use the JIRA boards for doing the projects, but this becomes expensive if we have more than 10 people using the board. So we are opting to use the Github Project board instead, which works almost exactly identical to JIRA. We can also refer to JIRA anytime we want to learn anything there and bring over to our project boards; so in this way we help anyone who needs help being ready to work in a JIRA environment.
-
-Our first big project will be the components library that Ben talked about at our meeting. We will have another meeting to talk about that in more detail, but in the mean time feel free to use Discord as a place to ask questions and suggest more project ideas (especially if you want to do backend or ML or anything else).
-
-Thanks for your support, stay safe, and see you at the next meetup!
+🚀 Good luck!
