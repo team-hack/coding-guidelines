@@ -59,7 +59,7 @@ Finally, push your work. Here are the commands you'll need:
 
 ```sh
 git add --all
-git commit -m "My first commit"
+git commit -m "My First Commit"
 git push origin feature/<issue-number>/<issue-name>
 ```
 
